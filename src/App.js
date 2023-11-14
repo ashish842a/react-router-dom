@@ -2,29 +2,10 @@
 import './App.css';
 
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
-
-function Home(){
-  return(
-    <h1>Home</h1>
-  )
-}
-
-function About(){
-  return(
-    <h1>About</h1>
-  )
-}
-
-function Account(){
-  return(
-    <h1>Account Page</h1>
-  )
-}
-function Setting(){
-  return(
-    <h1>Setting Page</h1>
-  )
-}
+import Home from './components/Home';
+import About from './components/About';
+import Account from './components/Account';
+import Setting from './components/Setting';
 
 
 
