@@ -6,8 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Account from './components/Account';
 import Setting from './components/Setting';
-
-
+import SayName from './components/SayName';
 
 function App() {
   return (
@@ -15,6 +14,10 @@ function App() {
     <Routes>
       <Route path='/' element={ <Home />} />
       <Route path='/about' element={ <About />} />
+
+      <Route path='/user/:username' element={ <SayName />} />
+
+
       <Route path='/account'>
       <Route path='page' element={ <Account />} />
       <Route path='setting' element={ <Setting />} />
