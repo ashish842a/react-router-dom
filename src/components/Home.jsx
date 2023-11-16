@@ -13,7 +13,7 @@ function Home(){
 
   },[])
 
-  console.log("post",post);
+  // console.log("post",post);
 
     return(
       post?<Card allPost={post} />:null

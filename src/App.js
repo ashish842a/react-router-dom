@@ -7,6 +7,7 @@ import About from './components/About';
 import Account from './components/Account';
 import Setting from './components/Setting';
 import SayName from './components/SayName';
+import Post from './components/Post';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='/about' element={ <About />} />
 
       <Route path='/user/:username' element={ <SayName />} />
+      <Route path='/post/:postId' element={ <Post />} />
 
 
       <Route path='/account'>

@@ -1,6 +1,7 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function BasicExample(props) {
   return (
@@ -11,10 +12,10 @@ function BasicExample(props) {
             <Card.Img variant="top" src="https://picsum.photos/100/100" />
             <Card.Body>
               <Card.Title>{post.title}</Card.Title>
-              <Card.Text>
+            <Card.Text>
                 {post.body}
               </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
+              <Link to={`/post/${post?.id}`} variant="primary">Go somewhere</Link>
             </Card.Body>
           </Card>
         ))
